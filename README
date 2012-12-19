@@ -1,0 +1,28 @@
+Internet lab project 01 for Hebrew University 
+----------------------------------------------
+
+By - Yoel Blum , id 039528724
+
+This project is an extension for the chrome browser that has two purposes - 
+
+1)Allow users who find it hard to keep away from certain sites (e.g Youtube) when they need to do more important things to limit themselves to a certain time period. The user chooses what domains
+he wishes to be alerted on and the time limit he allows himself to have - once this time limit is up the user is alerted either via email or to the webpage
+itself (or both). No more than one mail a day of alert , and no more than one alert to the webpage every 10 minutes.  The users can add any number of domains
+for and remove or reset them at any time he pleases if he wants to stop the 'nagging' . 
+
+2)Receive a weekly statistics of all domains visited including amount of time spent on them and number of visits.
+
+The extension is accompanied by server-side code (in server_side dir) that takes care of handling a database (each domain for tracking is added to the database) . The domains of
+the weekly statistics report or erased every week by a cron. 
+
+ Notes 
+ -------
+User has to be logged in in order for the extension to update his stats and send them to the server . The login is done by Gmail oauth and the extension
+looks for a cookie to determine whether the user is logged in . 
+
+ How to install 
+ -----------------
+download all files in statistics dir to a dir on your pc . In chrome , go to Tools -> Extensions -> Load Unpacked Extension and choose the dir 
+with the extension.
+
+Usage - click on the extension's icon - you are taking to the extension page with more details there.
