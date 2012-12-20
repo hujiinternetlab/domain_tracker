@@ -1,0 +1,35 @@
+{
+  "name": "statistics",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "statistics extension",
+   "browser_action": {
+    "default_icon": "icon.png"
+   
+	
+  },
+ "permissions": [
+  "tabs",
+  "history",
+  "http://*/" , 
+  "https://*/",
+  "cookies",
+  "http://myextension.uphero.com/",
+  "notifications"
+  ] ,
+  
+"content_scripts": [
+    {
+      "matches": ["http://myextension.uphero.com/*"],
+     "js": ["contentscript.js"]
+    } ,
+    {
+     "matches": ["http://*/*"], 
+     "js" : ["contentscript2.js"]
+    }  
+  ] ,
+  
+ "background": {
+    "scripts": ["background.js"]
+  }
+}
