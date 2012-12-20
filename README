@@ -22,7 +22,7 @@ looks for a cookie to determine whether the user is logged in .
 
  How to install 
  -----------------
-download all files in statistics dir to a dir on your pc . In chrome , go to Tools -> Extensions -> Load Unpacked Extension and choose the dir 
+download all files in extension dir to a dir on your pc . In chrome , go to Tools -> Extensions -> Load Unpacked Extension and choose the dir 
 with the extension.
 
 Usage - click on the extension's icon - you are taking to the extension page with more details there.
