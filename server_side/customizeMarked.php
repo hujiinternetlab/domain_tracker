@@ -10,5 +10,6 @@ if (isset($_SESSION['email'])) {
 	
 }
 else {
+	echo "email not set!";
 	header('Location: http://myextension.uphero.com/login.php');
 }

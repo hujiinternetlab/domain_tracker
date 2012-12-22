@@ -1,11 +1,22 @@
 @CHARSET "windows-1255";
 
-#top {
-	margin-left: 25%;
-}
+
 
 h1 {
-	margin-top: 5%;
-	text-shadow: 3%;
-	text-shadow: 0.1em 0.1em beige;
+	margin-left: 25% !important;
+	margin-top: 8% !important; 
+	color: black !important;
+	display: block !important;
 }
+
+
+
+
+button {
+	margin-top: 2% !important;
+	margin-left: 26% !important;
+	display: block !important;
+}
+
+
+

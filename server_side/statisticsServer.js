@@ -520,7 +520,7 @@ function fieldsAreValidForUpdate() {
 
 //jquery events should go here
 
-
+function registerEvents() {
 $("#customize").click(function() {
 	if ($("#customizeForm").css("display")=="none")
 		$("#customizeForm").css("display","block");
@@ -534,7 +534,7 @@ $("#updateButton").click(function() {
 
 $("#customizeSubmitButton").click(function(){
 
-	formData={
+	var formData={
 			message: $("#message").val(),
 			isAlert:  $("#alertByMail").attr("checked")=="checked" , 
 			isEmail: $("#alertToPage").attr("checked")=="checked"};
@@ -598,7 +598,7 @@ $("#submitForm").click(function(evt) {
 	evt.preventDefault();
 	var data = {name : $("#formDomainName").val() ,
 			date : $(".formMaxDate").val() , 
-			timeLimit : $("#formTimeLimit").val()
+			timeLimit : $("#formTimeLimitHours").val() +':'+ $("#formTimeLimitMinutes").val()+':00'
 	};
 	$.post("addtomarked.php",data,function() {
 		console.log("success");
@@ -606,8 +606,6 @@ $("#submitForm").click(function(evt) {
 		$("#addDomainForm")[0].reset();
 		refreshTable();
 	});
-
-
-
 });
+}
 

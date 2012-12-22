@@ -1,0 +1,21 @@
+@CHARSET "windows-1255";
+
+#nav {
+	background: #333 !important;
+	padding: 12px !important;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+#nav a {
+	color: #C2BDBD !important;
+}
+
+#nav a:hover {
+	color: white !important;
+	cursor: pointer !important;
+}
+#getstarted,#help,#login,#myDomains,#weeklyReport {
+	margin-left: 17px;
+}
