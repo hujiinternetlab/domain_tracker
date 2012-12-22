@@ -156,7 +156,11 @@ function getNonMarkedDomains() {
 	$id = getUIDByMail($_SESSION['email']);
 	//join between user and domain on userid
 	$query = "SELECT domain.domain_name as dname,domain.time as dtime,domain.visits as dvisits, domain.iddomain as did,domain.start_date as dstartdate, domain.is_marked as dismarked " .
+<<<<<<< HEAD
 			" FROM user INNER JOIN domain on user.userid=domain.user_id WHERE user.userid=" . $id ." AND domain.is_marked=0 AND DATEDIFF(CURDATE(),domain.start_date)<8 ORDER BY domain.time DESC" ;
+=======
+			" FROM user INNER JOIN domain on user.userid=domain.user_id WHERE user.userid=" . $id ." AND domain.is_marked=0 AND DATEDIFF(CURDATE(),domain.start_date)<8" ;
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 	//echo $query;
 	//echo "query is $query";
 	$dbresult = $conn->query($query);
@@ -311,5 +315,12 @@ function markedDomainDelete($data,$uid) {
 			//echo "returning not empty";
 			return $row;
 		}
+<<<<<<< HEAD
 }
+=======
+
+
+
+	}
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 

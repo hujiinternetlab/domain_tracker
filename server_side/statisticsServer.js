@@ -520,7 +520,11 @@ function fieldsAreValidForUpdate() {
 
 //jquery events should go here
 
+<<<<<<< HEAD
 function registerEvents() {
+=======
+
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 $("#customize").click(function() {
 	if ($("#customizeForm").css("display")=="none")
 		$("#customizeForm").css("display","block");
@@ -534,7 +538,11 @@ $("#updateButton").click(function() {
 
 $("#customizeSubmitButton").click(function(){
 
+<<<<<<< HEAD
 	var formData={
+=======
+	formData={
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 			message: $("#message").val(),
 			isAlert:  $("#alertByMail").attr("checked")=="checked" , 
 			isEmail: $("#alertToPage").attr("checked")=="checked"};
@@ -598,7 +606,11 @@ $("#submitForm").click(function(evt) {
 	evt.preventDefault();
 	var data = {name : $("#formDomainName").val() ,
 			date : $(".formMaxDate").val() , 
+<<<<<<< HEAD
 			timeLimit : $("#formTimeLimitHours").val() +':'+ $("#formTimeLimitMinutes").val()+':00'
+=======
+			timeLimit : $("#formTimeLimit").val()
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 	};
 	$.post("addtomarked.php",data,function() {
 		console.log("success");
@@ -606,6 +618,13 @@ $("#submitForm").click(function(evt) {
 		$("#addDomainForm")[0].reset();
 		refreshTable();
 	});
+<<<<<<< HEAD
 });
 }
+=======
+
+
+
+});
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 

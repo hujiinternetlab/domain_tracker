@@ -3,7 +3,11 @@ div.ui-datepicker {
 	font-size: 10px;
 }
 
+<<<<<<< HEAD
 #content {
+=======
+#contentDiv {
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 	margin-left: 25%;
 }
 
@@ -21,21 +25,33 @@ h3 {
 }
 
 #deleteButton,#addButton,#customize,#updateButton,#resetButton{
+<<<<<<< HEAD
 	background: #333;
+=======
+	background: rgb(160, 211, 216);
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	cursor: pointer;
 	border: 1px solid black;
+<<<<<<< HEAD
 	color: #C2BDBD;
 	border-radius: 4px;
+=======
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 	
 }
 
 #deleteButton:hover,#addButton:hover,#customize:hover,#updateButton:hover,#resetButton:hover  {
+<<<<<<< HEAD
 	
 	color: white;
+=======
+	background: rgb(182, 182, 241);
+	
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 }
 
 .markRed {
@@ -63,8 +79,14 @@ h3 {
 	display: none;
 }
 
+<<<<<<< HEAD
 #closeForm {
 	margin-left: 100px;
+=======
+#submitForm {
+	margin-top: 25px;
+	margin-right: 60px;
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 }
 
 #weeklyReport {
@@ -85,6 +107,7 @@ table {
 	cursor: pointer;
 }
 
+<<<<<<< HEAD
 #colon {
 position: absolute;
 color: red;
@@ -103,6 +126,10 @@ textarea,#formTimeLimitHours,#formTimeLimitMinutes {
 #message {
 	width: 200px !important;
 	margin: 0 auto !important;
+=======
+textarea {
+	cursor: pointer;
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
 }
 
 .firstCells {

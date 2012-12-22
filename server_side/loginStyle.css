@@ -1,5 +1,6 @@
 @CHARSET "windows-1255";
 
+<<<<<<< HEAD
 
 
 h1 {
@@ -20,3 +21,14 @@ button {
 
 
 
+=======
+#top {
+	margin-left: 25%;
+}
+
+h1 {
+	margin-top: 5%;
+	text-shadow: 3%;
+	text-shadow: 0.1em 0.1em beige;
+}
+>>>>>>> 3cb5511035444d69eb0411c331dffc42e8ea6a40
